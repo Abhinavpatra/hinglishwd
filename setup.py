@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="hinglishswd",
-    version="0.1.2",
+    version="0.1.3",
     description="A Python library for Hinglish (Hindi+English code-mixed) NLP: detection, tokenization, transliteration, stop-word removal.",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
