@@ -87,4 +87,4 @@ hinglishswd/
 
 ## License
 
-MIT
+Standard MIT license

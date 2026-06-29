@@ -7,6 +7,7 @@ setup(
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     author="Abhinav Patra",
+    license="Modified MIT License",
     packages=find_packages(),
     install_requires=[
         "indic-transliteration>=2.0.0",
@@ -19,7 +20,7 @@ setup(
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
         "Intended Audience :: Science/Research",
-        "License :: OSI Approved :: MIT License",
+        "License :: Other/Proprietary License",
         "Natural Language :: English",
         "Natural Language :: Hindi",
         "Operating System :: OS Independent",
