@@ -1,6 +1,13 @@
 import re
 from hinglishswd.detect import detect_language
 
+try:
+    import spacy
+    from spacy.lang.hi import Hindi
+    _nlp_hindi = Hindi()
+except ImportError:
+    _nlp_hindi = None
+
 HINGLISH_PATTERNS = [
     (r"\b(?:nahi|na|mat)\b", " negation"),
     (r"\b(?:hai|hain|ho|hu|tha|the|thi|thay)\b", " be"),
@@ -20,10 +27,12 @@ def tokenize(text, lang=None):
     if lang == "english":
         return text.split()
     if lang == "hindi":
-        import spacy
-        from spacy.lang.hi import Hindi
-        nlp = Hindi()
-        doc = nlp(text)
+        if _nlp_hindi is None:
+            raise ImportError(
+                "spacy is required for Hindi tokenization. "
+                "Install it with: pip install spacy"
+            )
+        doc = _nlp_hindi(text)
         return [token.text for token in doc]
     tokens = text.split()
     result = []

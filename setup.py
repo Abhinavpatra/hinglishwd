@@ -7,6 +7,12 @@ setup(
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     author="Abhinav Patra",
+    author_email="patraabhinav12@gmail.com",
+    url="https://github.com/abhinavpatra/hinglishwd",
+    project_urls={
+        "Source": "https://github.com/abhinavpatra/hinglishwd",
+        "Website": "https://abhinavpatra.tech",
+    },
     license="Modified MIT License",
     packages=find_packages(),
     install_requires=[
@@ -14,6 +20,7 @@ setup(
     ],
     extras_require={
         "spacy": ["spacy>=3.0.0"],
+        "translate": ["deep-translator>=1.0.0"],
     },
     python_requires=">=3.8",
     classifiers=[

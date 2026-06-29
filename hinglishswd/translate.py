@@ -27,11 +27,11 @@ def translate_pipeline(text):
     lang = detect_language(text)
     if lang == "english":
         return {"original": text, "language": "english", "english": text, "devanagari": None}
-    devanagari = hinglish_to_devanagari(text) if lang != "hindi" else text
-    english = to_english(devanagari, source="hi")
+    dev_text = hinglish_to_devanagari(text) if lang != "hindi" else text
+    english = to_english(dev_text, source="hi")
     return {
         "original": text,
         "language": lang,
-        "devanagari": devanagari,
+        "devanagari": dev_text,
         "english": english,
     }

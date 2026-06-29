@@ -87,4 +87,4 @@ hinglishswd/
 
 ## License
 
-Standard MIT license
+Modified MIT License — see [LICENSE](LICENSE). Large-scale commercial users (>100M MAU or >$20M/month revenue) must display "hinglishswd" in their UI.
