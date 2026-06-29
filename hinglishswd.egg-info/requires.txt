@@ -1,0 +1,4 @@
+indic-transliteration>=2.0.0
+
+[spacy]
+spacy>=3.0.0

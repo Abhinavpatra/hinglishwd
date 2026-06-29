@@ -1,0 +1,14 @@
+README.md
+setup.py
+hinglishswd/__init__.py
+hinglishswd/core.py
+hinglishswd/detect.py
+hinglishswd/stopwords.py
+hinglishswd/tokenize.py
+hinglishswd/translate.py
+hinglishswd/transliterate.py
+hinglishswd.egg-info/PKG-INFO
+hinglishswd.egg-info/SOURCES.txt
+hinglishswd.egg-info/dependency_links.txt
+hinglishswd.egg-info/requires.txt
+hinglishswd.egg-info/top_level.txt
